@@ -1,31 +1,23 @@
 ---
 category: Components
-type: Navigation
-title: Popover
+type: Data Display
+title: Printer
 ---
 
-After clicking on a control or an area, a Popover menu appears for doing more.
-If set mask prop, it is recommended to exit by clicking on any of the mask layers.
+After clicking on the arrow button, a Printer List appears for detail information.
+The Printer is consist of two part, the detail part is at the top, which is hidden by default, it will show when click the arrow button area. The summary part shows as default.
 
 ## API
 
-### Popover
+### Printer
 
 Properties | Descrition | Type | Default
 -----------|------------|------|--------
-| visible    | visible state  | Boolean |  false   |
-| onVisibleChange    | visible state change callback    | (visible: bool): void |  -   |
-| placement    | enum{'left','right','top','bottom', 'topLeft', 'topRight', 'bottomLeft', 'bottomRight'} | String |  'bottomRight'   |
-| mask    | Whether to display the mask background layer  | Boolean |  false  |
-| overlay   | Popup layer content  | ReactNode |  -   |
-| onSelect   | when an option is selected    | (node: any, index?: number): void |  -   |
+| prefixCls    | CSS Prefix  | string |  am-printer   |
+| disable      | disable dropdown | Boolean | false |
+| switchCls    | animation when changing tabs| Boolean | false |
+| initialAnim  | initial animation | Boolean  | false |
+| onDropdrop   | callback function when dropdown | (): void | - |
+| onPushUp     | callback function when push up | (): void | - |
 
 more available API can be found at [rmc-tooltip](https://github.com/react-component/m-tooltip#api)
-
-### Popover.Item
-
-Properties | Descrition | Type | Default
------------|------------|------|--------
-| disabled   | set disabled    | Boolean |  false   |
-| style  | item style   | Object |  -   |
-| icon   | icon   | ReactNode |  -   |
